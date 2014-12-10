@@ -69,8 +69,8 @@
             <!-- TABS -->
             <div class="row">
               <ul class="nav nav-tabs tabbed-data-container">
-                <li class="tabbed-data"><a data-toggle="tab" href="#test-data">Tests</a></li>
-                <li class="tabbed-data active"><a data-toggle="tab"href="#conformance-data">Conformance</a></li>
+                <li class="tabbed-data active"><a data-toggle="tab" href="#test-data">Tests</a></li>
+                <li class="tabbed-data"><a data-toggle="tab"href="#conformance-data">Conformance</a></li>
                 <li class="tabbed-data"><a data-toggle="tab"href="#heatmap-data">Heat Map</a></li>
               </ul>
             </div>
@@ -79,7 +79,7 @@
             <div class="row"> 
               <div class="tab-content">
                 <!-- TEST PANEL START -->
-                <div class="tab-pane" id="test-data">
+                <div class="tab-pane active" id="test-data">
                   <div class="col-md-12 tab-content-holder">
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                       <div class="panel">
@@ -89,12 +89,83 @@
                               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 CT01: Request xml using z
                               </a>
-
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+
+
+
+
+
+
+<div class="row">
+   <div class="col-md-7">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Evana</th>
+          <th>NMN</th>
+          <th>Gizzi</th>      
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: #F5F5F5">
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>      
+        </tr>
+        <tr>
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>      
+        </tr>
+        <tr>
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>      
+        </tr>
+        <tr>
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>        
+        </tr>
+        <tr>
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>      
+        </tr>
+        <tr>
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>      
+        </tr>
+        <tr>
+          <td>Evana</td>
+          <td>NMN</td>
+          <td>Gizzi</td>      
+        </tr> 
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-5" style="border: 1px solid #F5F5F5; min-height: 247px; margin-top: 50px;">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
                           </div>
                         </div>
                       </div>
@@ -133,183 +204,8 @@
                 </div>
                 <!-- TEST PANEL END -->
                 <!-- CONFORMANCE PANEL START -->
-                <div class="tab-pane active" id="conformance-data">
-                  <div class="col-md-12 tab-content-holder"> 
-                    <!-- REST STUFF -->
-                    <div id="resource-chart">
-                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                          <div class="panel-heading" role="tab" id="headingTest2">
-                              <h4 class="panel-title table-header">
-                                <span class="table-cell">Resource Type</span>
-                                <span class="table-label-holder">
-                                  <span class="table-cell">Read</span>
-                                  <span class="table-cell">VRead</span>
-                                  <span class="table-cell">Update</span>
-                                  <span class="table-cell">Delete</span>
-                                  <span class="table-cell">History-Instance</span>
-                                  <span class="table-cell">Validate</span>
-                                  <span class="table-cell">History-Type</span>
-                                  <span class="table-cell">Create</span>
-                                  <span class="table-cell">Search-Type</span>
-                                </span>
-                              </h4>
-                          </div>
-                        <div class="panel">
-                          <div class="panel-heading" role="tab" id="headingTest1">
-                              <h4 class="panel-title">
-                                <a class="collapsed row" data-toggle="collapse" data-parent="#accordion" href="#collapseTest1" aria-expanded="false" aria-controls="collapseOne">Resource Type</a>
-                                <span class="test-circle-holder">
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                </span>
-                              </h4>
-                          </div>
-                          <div id="collapseTest1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest1">
-                            <div class="panel-body">
-                              Poops
-                            </div>
-                          </div>
-                        </div>      
-                        <div class="panel">
-                          <div class="panel-heading" role="tab" id="headingTest2">
-                              <h4 class="panel-title">
-                                <a class="collapsed row" data-toggle="collapse" data-parent="#accordion" href="#collapseTest2" aria-expanded="false" aria-controls="collapseOne">Resource Type</a>
-                                <span class="test-circle-holder">
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-empty test-circle-empty"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                  <span class="circle-filled test-circle-filled"></span>
-                                </span>
-                              </h4>
-                          </div>
-                          <div id="collapseTest2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest2">
-                            <div class="panel-body">
-                              Poops
-                            </div>
-                          </div>
-                        </div>                  
-                      </div>  
-                    </div>
-
-                    <!-- START METADATA CONTAINER -->
-                    <div class="metadata-container row">
-                      <div class="metadata-selector col-md-3">
-                        <select class="form-control" id="metadata-selector">
-                          <option id="select" >Select Meta-Data</option>
-                          <option id="conformance" >Conformance Metadata</option>
-                          <option id="REST" >REST Metadata</option>
-                          <option id="document" >Document Metadata</option>
-                          <option id="messaging" >Messaging Metadata</option>
-                        </select>
-                      </div>
-                      <!-- START METADATA EXPAND CONTAINER -->
-                      <div class="metadata-expand-container col-md-9">
-                        <!-- START CONFORMANCE METADATA  -->      
-                        <div id="conformance-metadata" class="tab-pane" aria-labelledby="metadata-heading">
-                          <div class="panel-body">
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>NAME:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>FHIR Server 1 Conformance Statement #1</div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>IDENTIFIER:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>HHE489GN00-09</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- END CONFORMANCE METADATA  -->
-                        <!-- START REST METADATA  -->
-                        <div id="rest-metadata" class="tab-pane" role="tabpanel" aria-labelledby="metadata-heading">
-                          <div class="panel-body">
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>REST:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>FHIR Server 1 Conformance Statement #1</div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>IDENTIFIER:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>HHE489GN00-09</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- END REST METADATA  -->
-                        <!-- START DOCUMENT METADATA  -->
-                        <div id="document-metadata" class="tab-pane" role="tabpanel" aria-labelledby="metadata-heading">
-                          <div class="panel-body">
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>DOC:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>FHIR Server 1 Conformance Statement #1</div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>IDENTIFIER:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>HHE489GN00-09</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- END DOCUMENT METADATA  -->
-                        <!-- START MESSAGING METADATA  -->
-                        <div id="messaging-metadata" class="tab-pane" role="tabpanel" aria-labelledby="metadata-heading">
-                          <div class="panel-body">
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>MSG:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>FHIR Server 1 Conformance Statement #1</div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div><label>IDENTIFIER:</label></div>
-                              </div>
-                              <div class="col-md-9">
-                                <div>HHE489GN00-09</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- END MESSAGING METADATA -->
-
-                      </div>
-                      <!-- END METADATA EXPAND CONTAINER -->
-                    </div>
-                    <!-- END METADATA CONTAINER -->                    
-                  </div>
+                <div class="tab-pane" id="conformance-data">
+                  <div class="col-md-12 tab-content-holder">conformance</div>
                 </div>
                 <!-- CONFORMANCE PANEL END -->
                 <!-- HEATMAP PANEL START -->                

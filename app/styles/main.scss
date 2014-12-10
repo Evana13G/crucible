@@ -237,6 +237,7 @@ h2{
 
 .panel-heading{
   text-align: left;
+  padding: 0px 0px;
 }
 
 .panel-group .panel{
@@ -271,6 +272,7 @@ input[type="checkbox"]{
 .panel-title{
   text-align: left;
   font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .table {
@@ -316,18 +318,18 @@ input[type="checkbox"]{
 }
 
 .test-circle-empty{
-  width: 20px;
-  height: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  width: 15px;
+  height: 15px;
+  margin-left: 27px;
+  margin-right: 27px;
   border: 1px solid #7F9FC5;
 }
 
 .test-circle-filled{
-  width: 20px;
-  height: 20px;
-  margin-left: 25px;
-  margin-right: 25px;  
+  width: 15px;
+  height: 15px;
+  margin-left: 27px;
+  margin-right: 27px;  
   border: 1px solid #7F9FC5;
   background: #7F9FC5;
 }
@@ -342,6 +344,26 @@ input[type="checkbox"]{
   color: #B71817;
   float: right;
   margin-right: 17px;
+}
+
+table > tbody > tr > td{
+  .passed{
+    float: none;
+    margin-right: 0px;
+  }
+
+  .failed{
+    float: none;
+    margin-right: 0px;
+  }
+}
+
+table > tbody > tr > td{
+  text-align: center;
+}
+
+table > thead > tr > th{
+  text-align: center;
 }
 
 .conformance-test-badge{
@@ -442,7 +464,7 @@ span .table-cell{
   margin-top: 35px;
   height: 30px;
   background-color: #FFFFFF;
-  box-shadow: inset 0 1px 3px #D85D20;
+  border: 1px solid #D85D20;
 }
 
 .progress-bar{
