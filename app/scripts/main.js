@@ -17,4 +17,17 @@ $(document).ready(function(){
 		$(''+targetString).show();
 	});
 
+	// initialize table
+	$('.report-table > tbody > tr').removeClass('active');
+	$('.report-table > tbody > tr').first().addClass('active');
+	var initialDialogue = $('.report-table > tbody > tr').children()[1].innerText;
+	$('#test-dialogue').text(initialDialogue);
+
+	$('.report-table > tbody > tr ').click(function(){
+		$('.report-table > tbody > tr').removeClass('active');
+		$(this).addClass('active');
+		var text1 = $(this).children()[1].innerText;
+	    $('#test-dialogue').text(text1);
+	});
+
 });

@@ -359,12 +359,18 @@ table > tbody > tr > td{
 }
 
 table > tbody > tr > td{
-  text-align: center;
+  text-align: left;
 }
 
 table > thead > tr > th{
-  text-align: center;
+  text-align: left;
 }
+
+.table-container{
+  height: 300px;
+  overflow: auto;
+}
+
 
 .conformance-test-badge{
   margin-left: 29px;
