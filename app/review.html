@@ -210,18 +210,26 @@
                     <!-- START METADATA CONTAINER -->
                     <div class="metadata-container row">
                       <div class="metadata-selector col-md-3">
-                        <select class="form-control" id="metadata-selector">
+<!--                         <select class="form-control" id="metadata-selector">
                           <option id="select" >Select Meta-Data</option>
                           <option id="conformance" >Conformance Metadata</option>
                           <option id="REST" >REST Metadata</option>
                           <option id="document" >Document Metadata</option>
                           <option id="messaging" >Messaging Metadata</option>
-                        </select>
+                        </select> -->
+
+                        <ul class="nav nav-pills nav-stacked">
+                          <li class="active"><a data-toggle="tab" href="#conformance-metadata">Conformance Metadata</a></li>
+                          <li><a data-toggle="tab" href="#rest-metadata">REST Metadata</a></li>
+                          <li><a data-toggle="tab" href="#document-metadata">Document Metadata</a></li>
+                          <li><a data-toggle="tab" href="#messaging-metadata">Messaging Metadata</a></li>
+                        </ul>
+
                       </div>
                       <!-- START METADATA EXPAND CONTAINER -->
-                      <div class="metadata-expand-container col-md-9">
+                      <div class="metadata-expand-container col-md-9 tab-content">
                         <!-- START CONFORMANCE METADATA  -->      
-                        <div id="conformance-metadata" class="tab-pane" aria-labelledby="metadata-heading">
+                        <div id="conformance-metadata" class="tab-pane active">
                           <div class="panel-body">
                             <div class="row">
                               <div class="col-md-3">
@@ -243,7 +251,7 @@
                         </div>
                         <!-- END CONFORMANCE METADATA  -->
                         <!-- START REST METADATA  -->
-                        <div id="rest-metadata" class="tab-pane" role="tabpanel" aria-labelledby="metadata-heading">
+                        <div id="rest-metadata" class="tab-pane">
                           <div class="panel-body">
                             <div class="row">
                               <div class="col-md-3">
@@ -265,7 +273,7 @@
                         </div>
                         <!-- END REST METADATA  -->
                         <!-- START DOCUMENT METADATA  -->
-                        <div id="document-metadata" class="tab-pane" role="tabpanel" aria-labelledby="metadata-heading">
+                        <div id="document-metadata" class="tab-pane">
                           <div class="panel-body">
                             <div class="row">
                               <div class="col-md-3">
@@ -287,7 +295,7 @@
                         </div>
                         <!-- END DOCUMENT METADATA  -->
                         <!-- START MESSAGING METADATA  -->
-                        <div id="messaging-metadata" class="tab-pane" role="tabpanel" aria-labelledby="metadata-heading">
+                        <div id="messaging-metadata" class="tab-pane">
                           <div class="panel-body">
                             <div class="row">
                               <div class="col-md-3">

@@ -3,6 +3,71 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+
+$brand-primary: #505152;
+$brand-secondary: #D85D20;
+$brand-tertiary: #FFFFFF;
+$background: #F5F5F5;
+
+
+/************************** TO BE PLACED IN BOOTSTRAP3.SCSS **************************/
+
+
+body {
+  background-color: $background;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+footer {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  margin-top: 100px;
+
+  /*overridding bootstrap behavior*/
+  .nav > li > a:hover{
+    background-color: $brand-primary;
+  }
+  .nav > li > a:visited{
+    background-color: $brand-primary;
+  }  
+
+}
+
+header {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  border-radius: 0px;
+
+  /*overridding a bootstrap behavior*/
+  .nav > li > a:hover{
+    background-color: $brand-primary;
+  }
+  .nav > li > a:visited{
+    background-color: $brand-primary;
+  }  
+}
+
+/*Navigation has a navbar-header and then the actual nav itself*/
+
+.navbar-header{
+  .navbar-brand{
+    font-weight: 500;
+    font-size: 24px;
+    color: $brand-tertiary;
+  }
+}
+
+nav {
+  .navButton {
+    font-weight: 100;
+    font-size: 15px;
+    color: $brand-tertiary;
+  }
+}
+
+/************************** Not sure what this code does **************************/
+/**************************** Might be uneccesary code ****************************/
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,61 +75,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  background-color: #F5F5F5;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-
-/* Custom page header */
-header {
-  background-color: #505152;
-  border-color: #505152;
-  border-radius: 0px;
-
-  nav {
-    .navButton{
-    font-weight: 100;
-    font-size: 15px;
-    color: #FFFFFF;
-    }
-  }
-  .navbar-header .navbar-brand{
-    font-weight: 500;
-    font-size: 24px;
-    color: #FFFFFF;
-  }
-
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
+/* this was within the header defn */
+/*  h3 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
-  }
-}
+  }*/
 
-/* Custom page footer */
-footer {
-  background-color: #505152;
-  border-color: #505152;
-  margin-top: 100px;
-  .nav .navButton{
-      font-weight: 100;
-      font-size: 15px;
-      color: #FFFFFF;
-  }
-}
 
-footer .nav > li > a:hover, header .nav > li > a:hover {
-  background-color: #505152;
-}
-
+/******************************** END SECTION ********************************/
 
 .container-narrow > hr {
   margin: 30px 0;
@@ -134,7 +154,7 @@ footer .nav > li > a:hover, header .nav > li > a:hover {
 .btn {
   height: 34px; 
   width: 100%; 
-  background-color: #D85D20; 
+  background-color: $brand-secondary; 
   border-color: #D85D20;
   color: #FFFFFF;
 }
@@ -254,8 +274,16 @@ input[type="checkbox"]{
   margin-right: 10px;
 }
 
-.metadata-expand-container{
-  text-align: left;
+.metadata-selector{
+  .nav-pills > li > a{
+    color: $brand-primary;
+    border-radius: 2px;
+    padding: 5px 10px;
+  }
+  .nav-pills > li.active > a{
+    background-color: #eeeeee;
+    color: $brand-primary;
+  }  
 }
 
 .panel-body{
@@ -499,6 +527,23 @@ span .table-cell{
     from { transform: scale(1) rotate(0deg);}
     to { transform: scale(1) rotate(360deg);}
 }
+
+.metadata-table{
+  tbody > tr > td { 
+    border-top: none; 
+  }
+}
+
+.metadata-label{
+  font-weight: bold;
+  color: #7F9FC5;
+}
+
+.metadata-menu{
+  font-size: 11px;
+}
+
+
 
 /* Responsive: Portrait tablets and up */
 /*@media screen and (min-width: 768px) {
